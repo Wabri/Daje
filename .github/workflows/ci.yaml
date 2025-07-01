@@ -7,17 +7,14 @@ on:
     branches: [ "*" ]
   
 jobs:
-  commit_lint:
+  commit-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v4
-        with:
-          firstParent: true
-  golangci:
-    name: lint
+      - uses: wagoid/commitlint-github-action@v6
+  golangci-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,3 +24,10 @@ jobs:
           version: latest
           only-new-issues: false
           args: --timeout 2m --config .golangci.yaml
+  go_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run unit test
+        run: go test ./... -v -
