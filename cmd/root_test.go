@@ -11,7 +11,7 @@ func TestRunRootCommand(t *testing.T) {
 		runRootCommand(nil, []string{})
 	})
 
-	want := "Daje CLI is running...\nCurrent version: " + Version + "\n"
+	want := "Daje CLI is running...\nCurrent version: " + Version + "\nTODO: return a status of the dotfiles\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

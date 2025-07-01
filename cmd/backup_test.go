@@ -11,7 +11,7 @@ func TestRunBackupCommand(t *testing.T) {
 		runBackupCommand(nil, []string{})
 	})
 
-	want := "backup called\n"
+	want := "TODO: backup calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

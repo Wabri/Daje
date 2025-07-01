@@ -19,7 +19,7 @@ var pushCmd = &cobra.Command{
 }
 
 func runPushCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("push called")
+	fmt.Println("TODO: push calling")
 }
 
 func init() {

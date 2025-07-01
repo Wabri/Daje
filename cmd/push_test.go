@@ -11,7 +11,7 @@ func TestRunPushCommand(t *testing.T) {
 		runPushCommand(nil, []string{})
 	})
 
-	want := "push called\n"
+	want := "TODO: push calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

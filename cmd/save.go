@@ -19,7 +19,7 @@ var saveCmd = &cobra.Command{
 }
 
 func runSaveCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("save called")
+	fmt.Println("TODO: save calling")
 }
 
 func init() {

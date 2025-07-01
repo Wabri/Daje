@@ -37,4 +37,5 @@ func init() {
 func runRootCommand(_ *cobra.Command, _ []string) {
 	fmt.Println("Daje CLI is running...")
 	fmt.Printf("Current version: %s\n", Version)
+	fmt.Println("TODO: return a status of the dotfiles")
 }

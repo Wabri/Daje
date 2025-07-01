@@ -19,7 +19,7 @@ var fetchCmd = &cobra.Command{
 }
 
 func runFetchCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("fetch called")
+	fmt.Println("TODO: fetch calling")
 }
 
 func init() {

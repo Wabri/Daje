@@ -19,7 +19,7 @@ var daemonCmd = &cobra.Command{
 }
 
 func runDaemonCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("daemon called")
+	fmt.Println("TODO: daemon calling")
 }
 
 func init() {

@@ -19,7 +19,7 @@ var applyCmd = &cobra.Command{
 }
 
 func runApplyCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("apply called")
+	fmt.Println("TODO: apply calling")
 }
 
 func init() {

@@ -19,7 +19,7 @@ var backupCmd = &cobra.Command{
 }
 
 func runBackupCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("backup called")
+	fmt.Println("TODO: backup calling")
 }
 
 func init() {

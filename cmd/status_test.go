@@ -11,7 +11,7 @@ func TestRunstatusCommand(t *testing.T) {
 		runStatusCommand(nil, []string{})
 	})
 
-	want := "status called\n"
+	want := "TODO: status calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

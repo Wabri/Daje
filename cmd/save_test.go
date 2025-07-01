@@ -11,7 +11,7 @@ func TestRunSaveCommand(t *testing.T) {
 		runSaveCommand(nil, []string{})
 	})
 
-	want := "save called\n"
+	want := "TODO: save calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

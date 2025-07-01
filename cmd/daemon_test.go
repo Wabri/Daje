@@ -11,7 +11,7 @@ func TestRunDaemonCommand(t *testing.T) {
 		runDaemonCommand(nil, []string{})
 	})
 
-	want := "daemon called\n"
+	want := "TODO: daemon calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

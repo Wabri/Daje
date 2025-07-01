@@ -11,7 +11,7 @@ func TestRunApplyCommand(t *testing.T) {
 		runApplyCommand(nil, []string{})
 	})
 
-	want := "apply called\n"
+	want := "TODO: apply calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)

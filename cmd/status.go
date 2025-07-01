@@ -19,7 +19,7 @@ var statusCmd = &cobra.Command{
 }
 
 func runStatusCommand(_ *cobra.Command, _ []string) {
-	fmt.Println("status called")
+	fmt.Println("TODO: status calling")
 }
 
 func init() {

@@ -11,7 +11,7 @@ func TestRunFetchCommand(t *testing.T) {
 		runFetchCommand(nil, []string{})
 	})
 
-	want := "fetch called\n"
+	want := "TODO: fetch calling\n"
 
 	if got != want {
 		t.Errorf("Expected %q, got %q", want, got)
