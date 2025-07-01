@@ -1,10 +1,4 @@
 linters-settings:
-  govet:
-    shadow: true
-  golint:
-    min-confidence: 0
-  maligned:
-    suggest-new: true
   goimports:
     local-prefixes: github.com/schroedinger-Hat/Daje
   dupl:
@@ -40,6 +34,3 @@ linters:
     - unused
     - whitespace
     - exportloopref
-
-service:
-  golangci-lint-version: 1.33.x
