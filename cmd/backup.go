@@ -6,7 +6,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// backupCmd represents the backup command
 var backupCmd = &cobra.Command{
 	Use:   "backup",
 	Short: "A brief description of your command",
@@ -20,7 +19,7 @@ to quickly create a Cobra application.`,
 }
 
 
-func runBackupCommand(cmd *cobra.Command, args []string) {
+func runBackupCommand(_ *cobra.Command, _ []string) {
   fmt.Println("backup called")
 }
 

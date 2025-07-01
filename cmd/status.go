@@ -18,7 +18,7 @@ to quickly create a Cobra application.`,
 	Run: runStatusCommand,
 }
 
-func runStatusCommand(cmd *cobra.Command, args []string) {
+func runStatusCommand(_ *cobra.Command, _ []string) {
   fmt.Println("status called")
 }
 

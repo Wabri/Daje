@@ -40,7 +40,7 @@ func init() {
 }
 
 
-func runRootCommand(cmd *cobra.Command, args []string) {
+func runRootCommand(_ *cobra.Command, _ []string) {
   fmt.Println("Daje CLI is running...")
   fmt.Printf("Current version: %s\n", Version)
 }

@@ -19,7 +19,7 @@ to quickly create a Cobra application.`,
 }
 
 
-func runFetchCommand(cmd *cobra.Command, args []string) {
+func runFetchCommand(_ *cobra.Command, _ []string) {
 	fmt.Println("fetch called")
 }
 

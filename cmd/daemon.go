@@ -19,7 +19,7 @@ to quickly create a Cobra application.`,
 }
 
 
-func runDaemonCommand(cmd *cobra.Command, args []string) {
+func runDaemonCommand(_ *cobra.Command, _ []string) {
     fmt.Println("daemon called")
 }
 
