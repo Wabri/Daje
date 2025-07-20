@@ -8,6 +8,9 @@ import (
 	"github.com/schroedinger-Hat/Daje/internal/config"
 )
 
+// initEmptyDaje is a hook to allow replacing the initialization logic in tests.
+var initEmptyDaje = config.InitEmptyDaje
+
 func NewCmdInit() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "init [flags]",
@@ -26,9 +29,9 @@ func submitAction() error {
 		return nil
 	}
 
-	err := config.InitEmptyDaje()
+	err := initEmptyDaje()
 	if err != nil {
-		return nil
+		return err
 	}
 
 	fmt.Println("Daje has been initialized successfully!")
